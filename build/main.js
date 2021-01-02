@@ -10,6 +10,6 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-eval("console.log('Hello andy!!!!!!!!!!');\n\n\n//# sourceURL=webpack://webpack-loader-example/./src/index.js?");
+eval("console.log('Hello andy!!!!!!!!!!');\n\nconst Saturday = 'Saturday'\nconst city = 'beijing'\nconst greeting = `Hello 北京,today is 星期六`\n\ndiv = document.createElement('div')\ndiv.innerText = greeting\ndocument.body.appendChild(div)\n\n//# sourceURL=webpack://webpack-loader-example/./src/index.js?");
 /******/ })()
 ;

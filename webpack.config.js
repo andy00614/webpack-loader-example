@@ -1,5 +1,5 @@
 const path = require("path");
-const SetReadmeWebpackPlugin = require('./plugins/set-readme-webpack-plugin')
+const SetReadmeWebpackPlugin = require("./plugins/set-readme-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -14,27 +14,36 @@ module.exports = {
       {
         test: /\.js$/,
         use: {
-            loader: path.resolve(__dirname,'./loader/replace-loader.js'),
-            options: {
-                text: 'andy!!!!!!!!!!'
-            }
+          loader: path.resolve(__dirname, "./loader/replace-loader.js"),
+          options: {
+            text: "andy!!!!!!!!!!",
+          },
         },
       },
       {
         test: /\.js$/,
         use: {
-            loader: path.resolve(__dirname,'./loader/write-stream-loader.js'),
-            options: {
-                name: ''
-            }
+          loader: path.resolve(__dirname, "./loader/write-stream-loader.js"),
+          options: {
+            name: "",
+          },
         },
-      }
+      },
+      {
+        test: /\.js$/,
+        use: {
+          loader: path.resolve(__dirname, "./loader/i18n.js"),
+          options: {
+            locale: "zh",
+          },
+        },
+      },
     ],
   },
   plugins: [
-      new SetReadmeWebpackPlugin({
-          name: 'readme'
-      })
+    new SetReadmeWebpackPlugin({
+      name: "readme",
+    }),
   ],
   resolveLoader: {
     modules: ["./node_modules", "./loader"], // 配置loader的查找目录
