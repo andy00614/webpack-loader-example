@@ -10,6 +10,6 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-eval("console.log('Hello andy');\n\n\n//# sourceURL=webpack://webpack-loader-example/./src/index.js?");
+eval("console.log('Hello andy!!!!!!!!!!');\n\n\n//# sourceURL=webpack://webpack-loader-example/./src/index.js?");
 /******/ })()
 ;

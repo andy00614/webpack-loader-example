@@ -16,7 +16,7 @@ module.exports = {
         use: {
             loader: path.resolve(__dirname,'./loader/replace-loader.js'),
             options: {
-                text: 'andy'
+                text: 'andy!!!!!!!!!!'
             }
         },
       },
