@@ -1,4 +1,6 @@
+const loaderUtils = require('loader-utils')
 module.exports = function(source) {
     console.log('replace-loader!!!!!!!!!!!!');
-    return source.replace(/World/g,'Loader')
+    const options = loaderUtils.getOptions(this)
+    return source.replace(/World/g,options.text)
 }
